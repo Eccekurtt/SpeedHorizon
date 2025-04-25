@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import SearchBar from '@/components/SearchBar'
 import styles from './page.module.css'
+//commit
 
 export default function Home() {
   const categories = [
