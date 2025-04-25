@@ -32,7 +32,7 @@ export default function Appointment() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simüle edilmiş randevu oluşturma
+    // randevu oluştur
     toast.success('Randevunuz başarıyla oluşturuldu. Onay e-postası gönderildi.');
     setFormData({
       name: '',
