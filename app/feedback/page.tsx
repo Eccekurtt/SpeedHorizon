@@ -15,7 +15,7 @@ export default function Feedback() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simüle edilmiş form gönderimi
+    // Simüle edilmiş form gönderim
     toast.success('Geri bildiriminiz başarıyla gönderildi. En kısa sürede size dönüş yapacağız.');
     setFormData({
       name: '',
