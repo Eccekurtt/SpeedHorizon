@@ -1,5 +1,11 @@
 version: '3.8'
 services:
+  redis:
+    image: redis:7
+    container_name: speedhorizon-redis
+    ports:
+      - "6379:6379"
+
   rabbitmq:
     image: rabbitmq:3-management
     container_name: speedhorizon-rabbitmq
@@ -19,6 +25,8 @@ services:
     environment:
       - MONGODB_URI=mongodb://kubra32nur:kubra32kubra@ac-w5zd64r-shard-00-00.ijfvnnc.mongodb.net:27017,ac-w5zd64r-shard-00-01.ijfvnnc.mongodb.net:27017,ac-w5zd64r-shard-00-02.ijfvnnc.mongodb.net:27017/?ssl=true&replicaSet=atlas-4y348o-shard-0&authSource=admin&retryWrites=true&w=majority&appName=speedhorizon
       - PORT=5001
-      - RABBITMQ_URL=amqp://admin:admin123@rabbitmq:5672
+      - RABBITMQ_URL=amqps://tuyfyhrn:4DLKqGzNG8qXB8Ep4EVlKLij667DxeGh@gorilla.lmq.cloudamqp.com/tuyfyhrn
+      - REDIS_URL=redis://redis:6379
     depends_on:
-      - rabbitmq 
+      - rabbitmq
+      - redis 
