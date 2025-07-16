@@ -4,8 +4,10 @@ FROM node:18
 # Çalışma dizini
 WORKDIR /app
 
-# Bağımlılıkları kopyala ve yükle
-COPY package*.json ./
+# Backend package.json ve package-lock.json dosyalarını kopyala
+COPY src/api/package*.json ./
+
+# Bağımlılıkları yükle
 RUN npm install
 
 # Tüm dosyaları kopyala
