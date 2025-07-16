@@ -7,7 +7,7 @@ services:
     ports:
       - "5001:5001"
     environment:
-      - MONGODB_URI=mongodb://<USERNAME>:<PASSWORD>@ac-w5zd64r-shard-00-00.ijfvnnc.mongodb.net:27017,ac-w5zd64r-shard-00-01.ijfvnnc.mongodb.net:27017,ac-w5zd64r-shard-00-02.ijfvnnc.mongodb.net:27017/?ssl=true&replicaSet=atlas-4y348o-shard-0&authSource=admin&retryWrites=true&w=majority&appName=speedhorizon
+      - MONGODB_URI=mongodb://kubra32nur:kubra32kubra@ac-w5zd64r-shard-00-00.ijfvnnc.mongodb.net:27017,ac-w5zd64r-shard-00-01.ijfvnnc.mongodb.net:27017,ac-w5zd64r-shard-00-02.ijfvnnc.mongodb.net:27017/?ssl=true&replicaSet=atlas-4y348o-shard-0&authSource=admin&retryWrites=true&w=majority&appName=speedhorizon
       - PORT=5001
       - RABBITMQ_URL=amqps://<USERNAME>:<PASSWORD>@gorilla.lmq.cloudamqp.com/tuyfyhrn
       - REDIS_URL=rediss://default:<PASSWORD>@redis-18249.c14.us-east-1-3.ec2.redns.redis-cloud.com:18249 
