@@ -46,10 +46,36 @@ app.get('/api/status', (req, res) => {
   res.json({ success: true, message: 'API çalışıyor!' });
 });
 
-// Tüm motorları dönen endpoint
+// FİLTRELİ MOTORCYCLE ENDPOINTİ
 app.get('/api/motorcycles', async (req, res) => {
   try {
-    const motorcycles = await Motorcycle.find();
+    const {
+      category,
+      minPrice,
+      maxPrice,
+      minEngineSize,
+      maxEngineSize,
+      minPower,
+      maxPower,
+      q // arama
+    } = req.query;
+
+    // Filtre objesi oluştur
+    const filter = {};
+
+    if (category && category !== "Tümü") filter.category = category;
+    if (minPrice || maxPrice) filter.price = {};
+    if (minPrice) filter.price.$gte = Number(minPrice);
+    if (maxPrice) filter.price.$lte = Number(maxPrice);
+    if (minEngineSize || maxEngineSize) filter.engineSize = {};
+    if (minEngineSize) filter.engineSize.$gte = Number(minEngineSize);
+    if (maxEngineSize) filter.engineSize.$lte = Number(maxEngineSize);
+    if (minPower || maxPower) filter.power = {};
+    if (minPower) filter.power.$gte = Number(minPower);
+    if (maxPower) filter.power.$lte = Number(maxPower);
+    if (q) filter.name = { $regex: q, $options: "i" };
+
+    const motorcycles = await Motorcycle.find(filter);
     res.json({ success: true, data: motorcycles });
   } catch (err) {
     res.status(500).json({ success: false, message: 'Veritabanı hatası', error: err.message });
