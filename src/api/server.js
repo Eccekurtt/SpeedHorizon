@@ -15,6 +15,8 @@ const Order = require('./Order');
 const DiscountedProduct = require('./DiscountedProduct');
 const CreditCard = require('./CreditCard');
 const PriceList = require('./PriceList');
+const dealerApi = require('./dealerApi');
+const serviceApi = require('./serviceApi');
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -597,6 +599,9 @@ app.post('/api/creditcards', async (req, res) => {
     res.status(500).json({ success: false, message: 'Kart kaydedilemedi.', error: err.message });
   }
 });
+
+app.use('/api/dealers', dealerApi);
+app.use('/api/services', serviceApi);
 
 // 404 handler
 app.use((req, res) => {
