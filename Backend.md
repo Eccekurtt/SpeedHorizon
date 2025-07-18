@@ -1,8 +1,8 @@
 Domain Adresi : [https://speedhorizon.online/](https://speedhorizon.online/)                                                                              
-Docker : Kullanılmadı
+Docker : Kullanıldı
 REST API : Kullanıldı
-Redis : Kullanılmadı
-RabbitMQ : Kullanılmadı
+Redis : Kullanıldı
+RabbitMQ : Kullanıldı
 CI/CD : Kullanıldı
 
 FEYZA ERKARSLAN BACKEND
