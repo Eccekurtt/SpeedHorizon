@@ -24,7 +24,7 @@ KÜBRA NUR TURHAN BACKEND
 EMRE ŞENSEVER BACKEND 
 1. Görüntü Ekle  
 2. Motor Gücüne Göre Filtrele  
-3. Rengine Göre Filtrele  
+3. Motor Hacmine Göre Filtrele 
 4. Fiyata Göre Filtrele  
 5. Ürün Bilgisi Ekle  
 6. Fiyat Bilgisi Ekle  
