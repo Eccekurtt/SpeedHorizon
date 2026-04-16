@@ -8,7 +8,7 @@ Yedek Parçalar:
 Bu bölümde, motorlar ve scooterlar için yedek parça satışları yapılabilir. Motorun veya scooterın herhangi bir parçası arızalandığında, orijinal ve kaliteli yedek parçalar burada kolayca bulunabilir. 
 
 İndirimli Ürünler: 
-Kullanıcılar için cazip fırsatlar sunulacak olan bu alan, belirli ürünlerin indirimli fiyatlarla sunulduğu bir kategori olacaktır. Zaman zaman yapılan kampanyalarla, motorlar, scooterlar veya aksesuarlar gibi ürünler, daha uygun fiyatlarla satışa sunulacaktır. 
+Kullanıcılar için cazip fırsatlar sunulacak olan bu alan, belirli ürünlerin indirimli fiyatlarla sunulduğu bir kategori olacaktır. Zaman zaman yapılan kampanyalarla, motorlar, scooterlar veya aksesuarlar gibi ürünler , daha uygun fiyatlarla satışa sunulacaktır. 
 
 Aksesuarlar:
 Bu bölümde, motorlar ve scooterlar için gerekli olan, sürüş deneyimini geliştiren ya da güvenliği artıran aksesuarlar yer alır. Kasklar, eldivenler, ışıklar, güvenlik kilitleri gibi çeşitli aksesuarlar burada satışa sunulabilir.
